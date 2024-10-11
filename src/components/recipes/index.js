@@ -10,7 +10,7 @@ export default function RecipesList({ recipeData }) {
           ? recipeData.map((recipe) => (
               <Link href={`/recipes/${recipe.id}`}>
                 <Card>
-                  <CardContent className="bg-white rounded-md overflow-hidden cursor-pointer hover:scale-[1.1] trnsition-all">
+                  <CardContent className="bg-white rounded-md overflow-hidden cursor-pointer hover:scale-[1.1] transition-all ">
                     <div className="w-full aspect-w-16 aspec-h-8 lg:h80">
                       <img
                         src={recipe.image}

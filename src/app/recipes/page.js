@@ -16,6 +16,6 @@ export default async function Recipes (){
     
 
     const recipeData=await FetchRecipesList()
-    console.log(recipeData)
+    // console.log(recipeData)
     return <div><RecipesList recipeData={recipeData}/></div>
 }
