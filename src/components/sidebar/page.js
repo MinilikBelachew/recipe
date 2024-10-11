@@ -2,7 +2,7 @@ import { Coffee, Home, List, Utensils } from "lucide-react"; // Using lucide-rea
 
 export default function SideBar() {
   return (
-    <div className="bg-gray-900 fixed left-0 top-16 w-64 h-full z-40 p-6 shadow-lg">
+    <div className="bg-gray-900 fixed left-0 top-16 w-64 h-full z-40 p-6 shadow-lg hidden md:block ">
       <ul className="space-y-6">
         <li>
           <a
