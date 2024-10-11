@@ -4,7 +4,7 @@ import Link from "next/link";
       const apiResponse = await fetch(
         `https://dummyjson.com/recipes/${id}`
       );
-      const data = apiResponse.json();
+      const data = await apiResponse.json();
       return data;
   
     } catch (err){
@@ -62,36 +62,36 @@ export default async function Home() {
           Featured Recipes
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <Link href={`/recipes/${data.id}`}> 
+        <Link href={`/recipes/${data?.id}`}> 
           <div className="bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105">
             <img
               src={data?.image}
               alt={data?.name}
               className=" rounded-lg w-full"
             />
-            <h3 className="text-lg font-semibold mt-4">{data.name}</h3>
+            <h3 className="text-lg font-semibold mt-4">{data?.name}</h3>
             
           </div>
           </Link>
-          <Link href={`/recipes/${data1.id}`}> 
+          <Link href={`/recipes/${data1?.id}`}> 
           <div className="bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105">
             <img
                src={data1?.image}
                alt={data1?.name}
               className="rounded-lg w-full"
             />
-            <h3 className="text-lg font-semibold mt-4">{data1.name}</h3>
+            <h3 className="text-lg font-semibold mt-4">{data1?.name}</h3>
             
           </div>
           </Link>
-          <Link href={`/recipes/${data2.id}`}> 
+          <Link href={`/recipes/${data2?.id}`}> 
           <div className="bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105">
           <img
               src={data2?.image}
               alt={data2?.name}
               className=" rounded-lg w-full"
             />
-            <h3 className="text-lg font-semibold mt-4">{data2.name}</h3>
+            <h3 className="text-lg font-semibold mt-4">{data2?.name}</h3>
             
           </div>
           </Link>
