@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <div className="flex flex-1">
           <SideBar />
-          <main className="flex-1 md:ml-64 mt-16 p-6 overflow-y-auto bg-gray-100 h-screen">
+          <main className="flex-1 md:ml-64 mt-16 p-6 overflow-hidden bg-gray-100 h-screen">
             <Suspense fallback={<Loading />}> {children}</Suspense>
           </main>
         </div>
