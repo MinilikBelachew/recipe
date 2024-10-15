@@ -18,5 +18,5 @@ export default async function BreakFast()
 {
     const data=await FetchRecipesList("breakfast")
 
-    return <div><BreakFastCatagory data={data} /></div>
+    return <div><BreakFastCatagory recipeData={data} /></div>
 }

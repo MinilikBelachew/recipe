@@ -1,4 +1,4 @@
-import SnackCatagory from "@/components/snack";
+import DinnerCatagory from "@/components/dinner";
 import FetchRecipesList from "@/app/functions/fetchfunctions"
 
 
@@ -15,7 +15,8 @@ import FetchRecipesList from "@/app/functions/fetchfunctions"
 
 export default async function Snack()
 {
-    const data=await FetchRecipesList("snack")
+    const data=await FetchRecipesList("dinner")
+   
 
-    return <div><SnackCatagory recipeData={data} /></div>
+    return <div><DinnerCatagory recipeData={data} /></div>
 }

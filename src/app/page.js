@@ -38,9 +38,9 @@ export default async function Home() {
           Explore Categories
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-gray-200 p-6 text-center rounded-lg shadow-lg hover:bg-gray-300 cursor-pointer transition-all duration-300">
-            <h3 className="text-xl font-semibold">Vegetarian</h3>
-          </div>
+          <Link href="/dinner" className="bg-gray-200 p-6 text-center rounded-lg shadow-lg hover:bg-gray-300 cursor-pointer transition-all duration-300">
+            <h3 className="text-xl font-semibold">Dinner</h3>
+          </Link>
           <Link
             href="/breakfast"
             className="bg-gray-200 p-6 text-center rounded-lg shadow-lg hover:bg-gray-300 cursor-pointer transition-all duration-300"

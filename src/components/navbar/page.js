@@ -10,7 +10,7 @@ export default function Navbar() {
           <img
             src="foodtwo.jpg"
             alt=""
-            className=" w-16 h-12 rounded-full shadow-lg"
+            className=" hidden sm:hidden md:block  w-16 h-12 rounded-full shadow-lg"
           />
         </div>
        
