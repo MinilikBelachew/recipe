@@ -4,7 +4,7 @@ export default function Navbar() {
 
 
   return (
-    <nav className="bg-blue-600 bg-opacity-60  fixed w-full top-0 left-0 h-16 z-50">
+    <nav className="bg-gradient-to-r from-blue-950 to-blue-700 bg-opacity-60  fixed w-full top-0 left-0 h-16 z-50">
       <div className="container mx-auto h-full flex justify-between items-center px-4">
         <div className="text-white text-xl font-semibold">
           <img
@@ -21,10 +21,10 @@ export default function Navbar() {
           <a href="/search" className="text-white">
             Search
           </a>
-          <a href="/" className="text-white">
+          <a href="/about" className="text-white">
             About
           </a>
-          <a href="/search" className="text-white">
+          <a href="/contact" className="text-white">
             Contact
           </a>
         </div>

@@ -1,8 +1,8 @@
 export default function RecipesDetailsSupport({ getRecipedetails }) {
   
     return (
-      <div className="bg-gradient-to-r from-blue-100 to-gray-200 py-12">
-        <div className="p-6 lg:max-w-6xl max-w-2xl mx-auto bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
+      <div className="py-12">
+        <div className="p-6 lg:max-w-6xl max-w-2xl mx-auto bg-white rounded-lg shadow-lg transition-transform transform hover:shadow-2xl">
           <div className="grid items-start grid-cols-1 lg:grid-cols-2 gap-10">
           
             <img

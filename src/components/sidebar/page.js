@@ -23,13 +23,13 @@ export default function SideBar() {
       <div
         className={`${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } md:translate-x-0 transition-transform duration-300 h-full w-64 p-6 fixed top-16 left-0 z-40 bg-gray-950 shadow-2xl`}
+        } md:translate-x-0 transition-transform duration-300 h-full w-64 p-6 fixed top-16 left-0 z-40 bg-gradient-to-b from-blue-950 to-black shadow-2xl`}
       >
         <ul className="space-y-6">
           <li>
             <a
               href="/"
-              className="flex items-center text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 hover:bg-gray-800 p-2 rounded-lg"
+              className="flex items-center text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 hover:bg-blue-900 p-2 rounded-lg"
               aria-label="Home"
             >
               <Home className="w-6 h-6 mr-3 text-white" />
@@ -39,7 +39,7 @@ export default function SideBar() {
           <li>
             <a
               href="/recipes"
-              className="flex items-center text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 hover:bg-gray-800 p-2 rounded-lg"
+              className="flex items-center text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 hover:hover:bg-blue-900 p-2 rounded-lg"
               aria-label="All Food List"
             >
               <List className="w-6 h-6 mr-3 text-white" />
@@ -49,7 +49,7 @@ export default function SideBar() {
           <li>
             <a
               href="/snack"
-              className="flex items-center text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 hover:bg-gray-800 p-2 rounded-lg"
+              className="flex items-center text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 hover:hover:bg-blue-900 p-2 rounded-lg"
               aria-label="Snacks"
             >
               <Utensils className="w-6 h-6 mr-3 text-white" />
@@ -59,7 +59,7 @@ export default function SideBar() {
           <li>
             <a
               href="/breakfast"
-              className="flex items-center text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 hover:bg-gray-800 p-2 rounded-lg"
+              className="flex items-center text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 hover:hover:bg-blue-900 p-2 rounded-lg"
               aria-label="Breakfast"
             >
               <Coffee className="w-6 h-6 mr-3 text-white" />
@@ -69,7 +69,7 @@ export default function SideBar() {
           <li>
             <a
               href="/dinner"
-              className="flex items-center text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 hover:bg-gray-800 p-2 rounded-lg"
+              className="flex items-center text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 hover:hover:bg-blue-900 p-2 rounded-lg"
               aria-label="Dinner"
             >
               <Beef className="w-6 h-6 mr-3 text-white" />
