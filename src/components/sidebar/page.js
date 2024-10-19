@@ -23,7 +23,7 @@ export default function SideBar() {
       <div
         className={`${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } md:translate-x-0 transition-transform duration-300 h-full w-64 p-6 fixed top-16 left-0 z-40 bg-gradient-to-b from-blue-950 to-black shadow-2xl`}
+        } md:translate-x-0 transition-transform duration-300 h-full w-64 p-6 fixed top-16 left-0 z-40 bg-gradient-to-b from-gray-800 to-black shadow-2xl`}
       >
         <ul className="space-y-6">
           <li>
